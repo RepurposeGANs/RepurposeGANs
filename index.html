@@ -89,15 +89,12 @@
         <div class="container" style="max-width: 800px" >
           <h1 style="">Abstract</h1>
           <p  style="text-align: justify; font-size: 17px;">
-            One main challenge of semantic part segmentation lies in its requirement for expensive pixel-wise annotations.
-            Recent unsupervised and semi-supervised approaches either offer little control over object part assignment or
-            still require many labels for other object classes to enable few-shot segmentation for a new class. In this
-            work we propose a simple yet effective approach based on GANs for semantic part segmentation that requires as
-            few as a single label example along with an unlabeled dataset. Our key idea is to leverage the knowledge from
-            a trained GAN, traditionally only used for image synthesis, by using the information in the generator’s
-            activations as pixel-wise feature representation. Our novel use of GANs for unsupervised representation learning
-            yields surprisingly good results that are comparable to those from supervised baselines trained with significantly
-            more labels.
+            While GANs have shown success in realistic image generation, the idea of using GANs for other tasks unrelated to synthesis is underexplored. 
+            Do GANs learn meaningful structural parts of objects during their attempt to reproduce those objects? In this work, we test this hypothesis 
+            and propose a simple and effective approach based on GANs for semantic part segmentation that requires as few as one label example along with 
+            an unlabeled dataset. Our key idea is to extract ``readily discriminative'' pixel-wise representation from the generator in a trained GAN and 
+            use it as feature vectors for a segmentation network. Our novel re-purposing of GANs for unsupervised representation learning yields 
+            surprisingly good results that are comparable to those from supervised baselines trained with significantly more labels.
           </p>
         </div>
       </div>
