@@ -297,12 +297,12 @@
     </a>
   </header>
     <div class="card-content">
-      <pre style="background-color:inherit;padding: 0px;" id="bibtex-info">@inproceedings{Tritrong2021Repurposegans,
-        author = {Tritrong, Nontawat and Rewatbowornwong, Pitchaporn and Suwajanakorn, Supasorn},
-        title = {Repurposing GANs for One-shot Semantic Part Segmentation},
-        booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
-        year = {2021},
-        }</pre>
+<pre style="background-color:inherit;padding: 0px;" id="bibtex-info">@inproceedings{Tritrong2021Repurposegans,
+    author = {Tritrong, Nontawat and Rewatbowornwong, Pitchaporn and Suwajanakorn, Supasorn},
+    title = {Repurposing GANs for One-shot Semantic Part Segmentation},
+    booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+    year = {2021},
+}</pre>
     </div>
     </section>
     <section class="hero is-light" style="background-color: #FFFFFF;">
@@ -347,5 +347,25 @@
 
       gtag('config', 'G-QRZRM1ZZ9J');
     </script>
+     <script src="assets/scripts/clipboard.min.js"></script>
+  <script>
+    var clipboard = new ClipboardJS('.button-clipboard');
+    function setTooltip(){
+      var tooltip = document.querySelector('.button-clipboard-tooltip');
+      tooltip.style.display = 'block';
+    }
+    function hideTooltip(){
+      var tooltip = document.querySelector('.button-clipboard-tooltip');
+      tooltip.style.display = 'none';
+    }
+    clipboard.on('success', function(e) {
+      setTooltip(e.trigger, 'Copied!');
+      setTimeout(function(){
+        hideTooltip(e.trigger);
+      }, 2000);
+      
+    });
+    
+  </script>
   </body>
 </html>
